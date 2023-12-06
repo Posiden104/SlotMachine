@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="SlotMachine"
+run/main_scene="res://scenes/simple_start.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://images/icon.svg"
 
 [rendering]
 

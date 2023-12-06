@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://cdmhnj6aev7p8"]
+
+[ext_resource type="Texture2D" uid="uid://ly022vl5c63r" path="res://images/SMFrame_blank.png" id="1_0oupd"]
+[ext_resource type="Texture2D" uid="uid://dn1xpmhd8kdjf" path="res://images/Lucky7.png" id="2_3rd2b"]
+[ext_resource type="Texture2D" uid="uid://ctnq62rpx3xwd" path="res://images/paylineframe.png" id="3_gnogi"]
+[ext_resource type="Texture2D" uid="uid://dq6086yjngke7" path="res://images/spin.png" id="4_7eok7"]
+[ext_resource type="Texture2D" uid="uid://bqle0h2k5grtw" path="res://images/spin_pressed.png" id="5_p5th6"]
+[ext_resource type="Texture2D" uid="uid://cct04g2lv2y2j" path="res://images/bet.png" id="6_sok1p"]
+[ext_resource type="Texture2D" uid="uid://ds4fvxyoebd12" path="res://images/bet_pressed.png" id="7_l0sos"]
+
+[node name="Simple Start" type="Node2D"]
+
+[node name="SmFrameBlank" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(575.5, 302)
+texture = ExtResource("1_0oupd")
+
+[node name="Lucky7" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(500.5, 293)
+texture = ExtResource("2_3rd2b")
+
+[node name="Lucky8" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(649.5, 291)
+texture = ExtResource("2_3rd2b")
+
+[node name="Lucky9" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(575.5, 292)
+texture = ExtResource("2_3rd2b")
+
+[node name="Paylineframe" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(575.5, 291)
+texture = ExtResource("3_gnogi")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 577.5
+offset_top = 329.0
+offset_right = 609.5
+offset_bottom = 349.0
+texture_normal = ExtResource("4_7eok7")
+texture_pressed = ExtResource("5_p5th6")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 542.5
+offset_top = 329.0
+offset_right = 574.5
+offset_bottom = 349.0
+texture_normal = ExtResource("6_sok1p")
+texture_pressed = ExtResource("7_l0sos")
