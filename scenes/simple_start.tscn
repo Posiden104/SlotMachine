@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cdmhnj6aev7p8"]
+[gd_scene load_steps=12 format=3 uid="uid://cdmhnj6aev7p8"]
 
 [ext_resource type="Texture2D" uid="uid://ly022vl5c63r" path="res://images/SMFrame_blank.png" id="1_0oupd"]
 [ext_resource type="Texture2D" uid="uid://dn1xpmhd8kdjf" path="res://images/Lucky7.png" id="2_3rd2b"]
@@ -7,6 +7,18 @@
 [ext_resource type="Texture2D" uid="uid://bqle0h2k5grtw" path="res://images/spin_pressed.png" id="5_p5th6"]
 [ext_resource type="Texture2D" uid="uid://cct04g2lv2y2j" path="res://images/bet.png" id="6_sok1p"]
 [ext_resource type="Texture2D" uid="uid://ds4fvxyoebd12" path="res://images/bet_pressed.png" id="7_l0sos"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_msn6b"]
+action = &"spin"
+
+[sub_resource type="Shortcut" id="Shortcut_igl0v"]
+events = [SubResource("InputEventAction_msn6b")]
+
+[sub_resource type="InputEventAction" id="InputEventAction_xkjo7"]
+action = &"bet"
+
+[sub_resource type="Shortcut" id="Shortcut_cm1jj"]
+events = [SubResource("InputEventAction_xkjo7")]
 
 [node name="Simple Start" type="Node2D"]
 
@@ -41,6 +53,7 @@ offset_left = 577.5
 offset_top = 329.0
 offset_right = 609.5
 offset_bottom = 349.0
+shortcut = SubResource("Shortcut_igl0v")
 texture_normal = ExtResource("4_7eok7")
 texture_pressed = ExtResource("5_p5th6")
 
@@ -50,5 +63,6 @@ offset_left = 542.5
 offset_top = 329.0
 offset_right = 574.5
 offset_bottom = 349.0
+shortcut = SubResource("Shortcut_cm1jj")
 texture_normal = ExtResource("6_sok1p")
 texture_pressed = ExtResource("7_l0sos")
